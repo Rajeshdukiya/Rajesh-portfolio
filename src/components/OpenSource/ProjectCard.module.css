@@ -1,0 +1,91 @@
+.project__card {
+    animation: flipImage 0.5s ease-in-out;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    height: 38rem;
+    padding-top: 1.5rem;
+    overflow-x: hidden;
+}
+
+.image__pc {
+    width: 90%;
+    border-radius: 8px;
+}
+
+.project__detail {
+    color: #fff;
+}
+.project__card .btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.project__card p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+}
+
+.image__mobile {
+    display: none;
+}
+.image__mobile img {
+    width: 50%;
+    height: 31.5rem;
+}
+
+.note {
+    height: 50%;
+}
+
+.image--remove {
+    display: none;
+}
+
+.image--display {
+    animation: flipImage 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+@keyframes flipImage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .project__card {
+        grid-template-rows: 1fr 3fr;
+        height: 40rem;
+    }
+
+    .image__mobile img {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .project__card {
+        height: 34rem;
+    }
+
+    .project__card h1 {
+        padding: 0 2rem;
+    }
+
+    .image__mobile img {
+        width: 80%;
+    }
+}

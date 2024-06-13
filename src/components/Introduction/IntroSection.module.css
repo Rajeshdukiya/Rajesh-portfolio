@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap');
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: flex-start;
+    color: #fff;
+    overflow: hidden;
+}
+
+.intro__aside {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 7rem;
+}
+.intro__aside span {
+    position: absolute;
+    margin-left: -170px;
+    margin-top: -27px;
+    width: 300px;
+}
+.intro__aside span div g {
+    display: block !important;
+}
+.intro__aside h1 {
+    font-size: 5rem;
+    z-index: 3;
+    margin: 0.4em 0;
+    font-family: 'Comfortaa', cursive;
+}
+.intro__aside h2 {
+    font-size: 2.2rem;
+}
+.intro__aside p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.intro__btn {
+    margin-top: 30px;
+    display: flex;
+    gap: 2rem;
+}
+
+.animation {
+    margin-top: 3.5rem;
+}
+
+
+@media only screen and (min-width: 1500px) {
+    .animation {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .intro__aside h1 {
+        font-size: 4rem;
+    }
+    .intro__aside span {
+        margin-left: -130px;
+        margin-top: -35px;
+        width: 250px;
+    }
+    .intro__aside h2 {
+        font-size: 1.8rem;
+    }
+    .intro__aside p {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .intro__aside h1 {
+        font-size: 3.5rem;
+    }
+    .intro__aside span {
+        margin-left: -100px;
+        margin-top: -40px;
+        width: 200px;
+    }
+    .intro__aside h2 {
+        font-size: 1.5rem;
+    }
+    .intro__aside p {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .intro {
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .intro {
+        display: block;
+    }
+
+    .animation {
+        display: none;
+    }
+
+    .intro__aside {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .intro__aside span {
+        margin-left: -80px;
+        margin-top: -45px;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .intro__aside h1 {
+        font-size: 2rem;
+    }
+    .intro__aside span {
+        margin-top: -55px;
+    }
+}

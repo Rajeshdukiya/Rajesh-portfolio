@@ -1,0 +1,127 @@
+.section {
+    color: #fff;
+    padding-top: 5rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.animation {
+    display: flex;
+    gap: 2rem;
+}
+
+.animation div {
+    height: 80px;
+    margin-top: 1.5rem;
+}
+
+.heading {
+    margin-bottom: 0;
+    font-size: 4rem;
+    margin-left: 5rem;
+}
+
+.detail {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 5rem;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.workcard {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    place-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    margin-top: 5rem;
+    height: 38rem;
+    overflow-x: hidden;
+}
+.workcard h1 {
+    margin: 0;
+}
+.workcard h2 {
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+}
+.workcard img {
+    width: 50%;
+}
+.workcard p {
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .heading {
+        font-size: 3rem;
+    }
+
+    .detail {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .animation div {
+        height: 70px;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .heading,
+    .detail {
+        margin: 0 2rem;
+    }
+
+    .heading {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0;
+        width: 60%;
+    }
+
+    .animation {
+        gap: 0;
+    }
+    .animation div {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .list {
+        width: 90%;
+    }
+
+    .workcard {
+        height: 36rem;
+    }
+
+    .animation .heading {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .heading {
+        font-size: 2rem;
+    }
+}

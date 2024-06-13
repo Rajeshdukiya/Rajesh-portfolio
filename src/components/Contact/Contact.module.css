@@ -1,0 +1,127 @@
+.contact {
+    color: #fff;
+    overflow: hidden;
+    padding-top: 8rem;
+}
+.contact p {
+    font-size: 1.5rem;
+    width: 40vw;
+    text-align: center;
+    margin: auto;
+}
+
+.train__margin {
+    height: 3px;
+    background-color: #aaa;
+    margin: 0 5vw;
+}
+
+.train__margin--up {
+    margin-top: 10vh;
+    margin-bottom: 3%;
+}
+
+.train__margin--down {
+    margin-top: 1%;
+}
+
+.contact--train {
+    font-size: 6rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 10px;
+    color: rgba(170, 170, 170, 0.6);
+    overflow: hidden;
+}
+.contact--train h1 {
+    margin: 0;
+    margin-bottom: 0.13em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.contact--train h1 span:hover {
+    color: #aaa;
+    transition: ease-in-out 0.3s;
+}
+
+.contact__details {
+    display: flex;
+    margin-left: 5rem;
+    align-items: flex-start;
+    justify-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.heading {
+    margin-bottom: 0.3em;
+    font-size: 3rem;
+}
+
+.contact__details p {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+.contact__details h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img {
+    width: 17rem;
+    border: 8px solid var(--light_purple);
+    border-radius: 50%;
+    margin: auto;
+}
+
+footer {
+    margin: 2rem 0;
+}
+
+.contact p:last-child {
+    font-size: 1.2rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .contact p {
+        width: 70vw;
+    }
+
+    .contact__details {
+        margin-left: 5rem;
+        flex-direction: column-reverse;
+    }
+
+    .img {
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .contact p {
+        width: 80vw;
+        font-size: 1.3rem;
+    }
+
+    .contact__details {
+        margin: 0 2rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .contact__details p {
+        font-size: 1.3rem;
+    }
+
+    .contact p:last-child {
+        font-size: 1rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,81 @@
+.points {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.points p {
+    font-size: 1.5rem;
+}
+
+.list h2 {
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+}
+.list p {
+    font-size: 1rem;
+    margin-top: 0;
+}
+.list img {
+    height: 50%;
+    width: 120px;
+}
+
+.extendable-line {
+    height: 2px;
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    background-color: #aaa;
+    transform-origin: 0 50%;
+    transform: scaleX(1);
+    transition-duration: 0.5s;
+}
+
+.list:hover .extendable-line {
+    background-color: var(--light_purple);
+    transform-origin: 0 50%;
+    transform: scaleX(1.15);
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .list h1 {
+        font-size: 1.6rem;
+    }
+    .list h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .points {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .list h1 {
+        font-size: 1.3rem;
+    }
+    .list h2 {
+        font-size: 1.2rem;
+    }
+    .list p {
+        font-size: 0.9rem;
+    }
+    .list:hover .extendable-line {
+        transform: scaleX(1.5);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .project__list {
+        width: 90%;
+    }
+}
