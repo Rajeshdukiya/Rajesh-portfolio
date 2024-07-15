@@ -2,8 +2,6 @@ import { useContext, useEffect, useState } from 'react';
 import 'aos/dist/aos.css';
 
 import ModeChangeContext from '../../store/mode-change-context';
-import RabbitAnimationDark from './RabbitAnimationDark';
-import RabbitAnimationLight from './RabbitAnimationLight';
 import IconButtons from '../shared/IconButtons/IconButtons';
 import HelloAnimationDark from './HelloDark';
 import HelloAnimationLight from './HelloLight';
@@ -37,11 +35,10 @@ const IntroSection = () => {
                 <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>I am a Frontend Web Developer with experience of building web applications with React.js {/* / Next.js  */}/ Javascript and some other cool libraries, custom plugins, animations and frameworks.</p>
                 <IconButtons inverse />
                 <div className={styles.intro__btn}>
-                    <Button id='btn4' onClick={() => setLink('https://drive.google.com/file/d/10Vtv1SCbJQajNTPlOV7XwFDK-VwcekkO/view')}>MY RESUME</Button>
+                    <Button id='btn4' onClick={() => setLink('')}>MY RESUME</Button>
                     <a href='#contact' alt='Contact Me'><Button id='btn5'>CONTACT ME</Button></a>
                 </div>
             </aside>
-            <div className={styles.animation} style={{background: !modeCtx.mode ? '#fff' : 'radial-gradient(closest-side, rgba(44,56,83,1) 0%, rgba(14,19,31,1) 100%)' }}>{!modeCtx.mode ? <RabbitAnimationLight /> : <RabbitAnimationDark />}</div>
         </div>
     );
 

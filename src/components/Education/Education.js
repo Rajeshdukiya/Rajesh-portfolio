@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 
 import ModeChangeContext from '../../store/mode-change-context';
-import nit from '../../assets/MDSU-logo.png';
+import mdsu from '../../assets/MDSU-logo.png';
 import EducationCard from './EducationCard';
 import styles from './Education.module.css';
 
@@ -22,7 +22,7 @@ const Education = () => {
     return (
         <div className={styles.education} style={!modeCtx.mode ? styleLight : styleDark}>
             <h1 className={styles.heading}>Education</h1>
-            <EducationCard src={nit} alt={'MDSU Ajmer'} heading={'Maharshi Dayanand Saraswati University, Ajmer'} degree={`Master of Computer Science`} subject={'Computer Science'} />
+            <EducationCard src={mdsu} alt={'MDSU Ajmer'} heading={'Maharshi Dayanand Saraswati University, Ajmer'} degree={`Master of Computer Science`} subject={'Computer Science'} />
         </div>
     );
 
