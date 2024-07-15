@@ -37,7 +37,7 @@ const Header = () => {
     return (
         <div className={menuScreen && check ? styles.backdrop : ''}>
             <div className={styles.header} id={styles.menuToggle} style={{ backgroundColor: !modeCtx.mode ? 'rgb(80, 80, 80)' : 'var(--nav_blue)' }}>
-                <p className={styles.name}>{'< Rajesh Dukiya />'}</p>
+                <p className={styles.name}>{'Portfolio'}</p>
 
                 <div className={styles.hamburger}>
                     <input type={'checkbox'} checked={check} onChange={() => setCheck(prevState => prevState === true ? false : true)} />

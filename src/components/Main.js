@@ -2,7 +2,6 @@ import { Fragment, useContext } from 'react';
 import Aos from 'aos';
 
 import ModeChangeContext from '../store/mode-change-context';
-import Home from './Home/Home';
 import Header from './Header/Header';
 import IntroSection from './Introduction/IntroSection';
 import WebSkills from './Skills/WebSkills';
@@ -28,7 +27,6 @@ const Main = () => {
     return (
         <Fragment>
             <Header />
-            <div className='center'><Home /></div>
             <IntroSection />
             <WebSkills />
             <Proficiency />
