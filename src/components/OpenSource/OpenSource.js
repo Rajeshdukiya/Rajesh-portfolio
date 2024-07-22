@@ -19,8 +19,11 @@ const OpenSource = () => {
                 <p className={styles.project__detail} style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Some cool projects that I built till now...</p>
             </div>
             <div className={styles.project__list}>
-                <ProjectCard project='1' src1={img1a} src2={img1b} heading='Website Builder App' detail1='This is a ' name='Website Builder AppApplication ' detail2="made using React.js that significantly reduces the time it takes to create a website. Developers don't need to write code from scratch, speeding up the development process." link='https://web-application-builder-nu.vercel.app/' />
-                <ProjectCard project='2' src1={img2a} src2={img2b} heading='Expense Tracker App' detail1='This is a' name=' Full-Stack Expense Tracker App' detail2='made using React.js, Firebase, Google Charts. This application helps users gain a better understanding of their spending habits, enabling them to make informed financial decisions.' link='https://expense-tracker-app-delta-one.vercel.app/sign-in' />
+                <ProjectCard project='1' src1={img1a} src2={img1b} heading='Cafe Online Order App' detail1='This is a ' name='Cafe Online Order App
+ ' detail2="This is an online order cafe application made using React with Cart functionality and other required calculations for items in cart" link='https://cafe-aap.netlify.app/' />
+                <ProjectCard project='2' src1={img2a} src2={img2b} heading='
+Racing Car Game' detail1='This is a' name='
+Car Racing Game ' detail2='where the car can be controlled using the arrow keys. If the car collides with the enemys car, the game stops. The score is displayed on the screen.' link='https://car-game-play.netlify.app' />
             </div>
         </div>
     );
