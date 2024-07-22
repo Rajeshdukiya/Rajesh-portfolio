@@ -65,13 +65,13 @@ const Contact = () => {
                 <div>
                     <h1 className={styles.heading}>Let's build something great!</h1>
                     <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Available to work on your projects and bring your ideas to life. I am just a click away!</p>
-                    <h2>Frontend Developer</h2>
+                    <h2></h2>
                     <h2>India</h2>
                     <IconButtons grey />
                 </div>
                 <img src={myimg} className={styles.img} alt='Vanshita Dev' />
             </div>
-            <footer><p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Designed By Rajesh Dukiya | &#169; 2022 All Rights Reserved</p></footer>
+            <footer><p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Designed By Rajesh Dukiya | &#169; 2024 All Rights Reserved</p></footer>
         </div>
     );
 
