@@ -71,7 +71,7 @@ const Contact = () => {
                 </div>
                 <img src={myimg} className={styles.img} alt='Vanshita Dev' />
             </div>
-            <footer><p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Designed By Rajesh Dukiya | &#169; 2022 All Rights Reserved</p></footer>
+            <footer><p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Designed By Rajesh Dukiya | &#169; 2024 All Rights Reserved</p></footer>
         </div>
     );
 
